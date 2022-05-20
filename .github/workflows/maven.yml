@@ -23,4 +23,6 @@ jobs:
         distribution: 'temurin'
         cache: maven
     - name: Build with Maven
-      run: mvn -B --file pom.xml
+      env:
+        REPO_TOKEN: ${{ secrets.REPO_TOKEN }}
+      run: mvn -B package -DrepoToken="$REPO_TOKEN" --file pom.xml
