@@ -25,4 +25,4 @@ jobs:
     - name: Build with Maven
       env:
         REPO_TOKEN: ${{ secrets.REPO_TOKEN }}
-      run: mvn -B -DrepoToken="$REPO_TOKEN" --file pom.xml
+      run: mvn -B --file pom.xml
