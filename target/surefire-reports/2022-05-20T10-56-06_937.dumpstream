@@ -1,0 +1,51 @@
+# Created at 2022-05-20T10:56:08.281
+Exception in thread "main" java.lang.reflect.InvocationTargetException
+
+# Created at 2022-05-20T10:56:08.285
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:119)
+
+# Created at 2022-05-20T10:56:08.286
+	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+
+# Created at 2022-05-20T10:56:08.287
+	at java.instrument/sun.instrument.InstrumentationImpl.loadClassAndStartAgent(InstrumentationImpl.java:491)
+
+# Created at 2022-05-20T10:56:08.288
+	at java.instrument/sun.instrument.InstrumentationImpl.loadClassAndCallPremain(InstrumentationImpl.java:503)
+
+# Created at 2022-05-20T10:56:08.289
+Caused by: java.lang.RuntimeException: Class java/util/UUID could not be instrumented.
+
+# Created at 2022-05-20T10:56:08.290
+	at org.jacoco.agent.rt.internal_14f7ee5.core.runtime.ModifiedSystemClassRuntime.createFor(ModifiedSystemClassRuntime.java:139)
+
+# Created at 2022-05-20T10:56:08.291
+	at org.jacoco.agent.rt.internal_14f7ee5.core.runtime.ModifiedSystemClassRuntime.createFor(ModifiedSystemClassRuntime.java:100)
+
+# Created at 2022-05-20T10:56:08.292
+	at org.jacoco.agent.rt.internal_14f7ee5.PreMain.createRuntime(PreMain.java:55)
+
+# Created at 2022-05-20T10:56:08.293
+	at org.jacoco.agent.rt.internal_14f7ee5.PreMain.premain(PreMain.java:47)
+
+# Created at 2022-05-20T10:56:08.295
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+
+# Created at 2022-05-20T10:56:08.296
+	... 3 more
+
+# Created at 2022-05-20T10:56:08.297
+Caused by: java.lang.NoSuchFieldException: $jacocoAccess
+
+# Created at 2022-05-20T10:56:08.298
+	at java.base/java.lang.Class.getField(Class.java:2149)
+
+# Created at 2022-05-20T10:56:08.299
+	at org.jacoco.agent.rt.internal_14f7ee5.core.runtime.ModifiedSystemClassRuntime.createFor(ModifiedSystemClassRuntime.java:137)
+
+# Created at 2022-05-20T10:56:08.300
+	... 7 more
+
+# Created at 2022-05-20T10:56:08.301
+*** java.lang.instrument ASSERTION FAILED ***: "result" with message agent load/premain call failed at t:\workspace\open\src\java.instrument\share\native\libinstrument\JPLISAgent.c line: 422
+
